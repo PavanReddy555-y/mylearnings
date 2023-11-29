@@ -1,0 +1,32 @@
+package com.example.demo;
+
+import java.util.Objects;
+
+public class Practice {
+
+	private int a;
+	private int b;
+	private int c;
+	private int d;
+	@Override
+	public String toString() {
+		return "Practice [a=" + a + ", b=" + b + ", c=" + c + ", d=" + d + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(a, b, c, d);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Practice other = (Practice) obj;
+		return a == other.a && b == other.b && c == other.c && d == other.d;
+	}
+	
+	
+}

@@ -1,0 +1,26 @@
+package set1;
+
+public class FlowControls {
+	
+	public static void main(String[] args) {
+		//1.	Write a program to print Non-prime numbers from 1 to 100 using for, while and do-while loop?
+		nonPrimeNumbersWithFor();
+	}
+
+	private static void nonPrimeNumbersWithFor() {
+		
+		for(int index=1; index<=100;index++ ) {
+			int count = 0;
+			for(int innerIndex = 2; innerIndex<=(index/2); innerIndex++) {
+				if(index%innerIndex==0) {
+					count++;
+				}
+			}
+			if(count!=0) {
+				System.out.println(index);
+			}
+		}
+		
+	}
+
+}

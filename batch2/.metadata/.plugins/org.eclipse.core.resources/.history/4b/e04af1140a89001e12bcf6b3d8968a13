@@ -1,0 +1,29 @@
+package com.cn.set1;
+
+public class Test  {
+	       
+	
+	    public static void main(String[] args) {
+			B bq = new B();
+		}
+	
+}          
+class A
+{
+ int a=10;
+}
+ 
+class B extends A
+{
+	int b;
+ public B() {
+	this.b = super.a;
+	System.out.println(b);
+ }
+}
+ 
+class C extends B
+{
+ 
+}
+ 

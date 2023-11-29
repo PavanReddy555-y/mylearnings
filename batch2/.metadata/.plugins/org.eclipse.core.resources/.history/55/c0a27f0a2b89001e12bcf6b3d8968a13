@@ -1,0 +1,10 @@
+package com.example.demo;
+
+public class Practice {
+
+	private int a;
+	private int b;
+	private int c;
+	private int d;
+	
+}
